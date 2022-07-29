@@ -1,6 +1,10 @@
 class CartsController < ApplicationController
 
   def show
+    pp cart.size
+    if cart.size == 0
+      flash.now[:notice] = "You cart is empty."
+    end
   end
 
   def add_item
