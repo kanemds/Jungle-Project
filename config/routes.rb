@@ -22,8 +22,6 @@ Rails.application.routes.draw do
       get "categories"
     end
 
-  
-    
   end
 
   get '/login' => 'sessions#new'
